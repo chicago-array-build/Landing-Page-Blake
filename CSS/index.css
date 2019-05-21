@@ -126,6 +126,7 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+@import "variables.less";
 body {
   background-image: url("../imgs/chicago.jpg");
   background-repeat: no-repeat;
@@ -137,15 +138,26 @@ body {
   align-items: center;
 }
 body nav {
-  background: white;
+  height: 20px;
+  background-color: #ffffff;
   width: 90%;
   display: flex;
   justify-content: space-around;
+  align-items: center;
   margin-bottom: 40px;
 }
+body nav a {
+  text-decoration: none;
+  color: black;
+}
+body nav img {
+  height: 15px;
+  width: 15px;
+}
 body .main {
-  background: darkred;
+  background: #ff2222;
   width: 90%;
+  color: #ffffff;
 }
 body .main h1 {
   font-size: 4rem;
@@ -153,6 +165,15 @@ body .main h1 {
 body .main img {
   width: 300px;
 }
+/*
+nav {
+  background: @white;
+  width: 90%;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 40px;
+}
+*/
 html {
   font-size: 62.5%;
 }

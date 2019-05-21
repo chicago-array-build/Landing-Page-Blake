@@ -1,3 +1,6 @@
+
+@import"variables.less";
+
 body{
   background-image: url("../imgs/chicago.jpg");
   background-repeat: no-repeat;
@@ -8,18 +11,45 @@ body{
   justify-content: center;
   align-items: center;
   nav{
-    background: white;
+    height: 20px;
+    background-color:@white;
     width: 90%;
     display: flex;
     justify-content: space-around;
+    align-items: center;
     margin-bottom: 40px;
+    a{
+      text-decoration: none;
+      color: black;
+    }
+    img{
+      height: 15px;
+      width: 15px;
+    }
   }
   .main{
-    background: darkred;
+    background: @flag-red;
     width: 90%;
-    h1{ font-size: 4rem;}
+    color: @white;
+    h1{ 
+      font-size: 4rem;
+    }
     img{
       width: 300px;
+      //display: none;
     }
   }
 }
+
+
+
+//david flack's code
+/*
+nav {
+  background: @white;
+  width: 90%;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 40px;
+}
+*/
