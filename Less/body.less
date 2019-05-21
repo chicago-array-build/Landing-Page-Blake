@@ -1,9 +1,25 @@
 body{
-    background-image: url("../imgs/chicago.jpg");
-    background-repeat: no-repeat;
+  background-image: url("../imgs/chicago.jpg");
+  background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
-img{
-    width: 300px;
-}
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  nav{
+    background: white;
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 40px;
+  }
+  .main{
+    background: darkred;
+    width: 90%;
+    h1{ font-size: 4rem;}
+    img{
+      width: 300px;
+    }
+  }
 }
