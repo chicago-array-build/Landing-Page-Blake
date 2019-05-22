@@ -139,7 +139,7 @@ body {
   font-family: 'Montserrat';
 }
 body nav {
-  height: 20px;
+  height: 30px;
   background-color: #ffffff;
   width: 84%;
   display: flex;
@@ -183,16 +183,17 @@ body .main .image-displayer .tab-bar .tab {
 body .main .image-displayer .tab-bar .selected {
   background: #a3d3ec;
 }
-body .main .image-displayer div {
-  width: 400px;
+body .main .image-displayer .viz {
   padding: 10px;
   background: #a3d3ec;
+  display: none;
 }
-body .main .image-displayer div img {
+body .main .image-displayer .viz img {
+  width: 400px;
+  height: auto;
   width: 100%;
 }
 body .main .image-displayer .displayed {
-  background: green;
   display: flex;
 }
 /*
@@ -220,6 +221,23 @@ nav {
 }
 .row .column div img {
   width: 80px;
+}
+nav {
+  height: 30px;
+  background-color: #ffffff;
+  width: 84%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 40px;
+}
+nav a {
+  text-decoration: none;
+  color: black;
+}
+nav img {
+  height: 15px;
+  width: 15px;
 }
 * {
   box-sizing: border-box;
