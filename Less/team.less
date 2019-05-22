@@ -1,16 +1,27 @@
-.row{
+.column{
     display: flex;
+    flex-direction: column;
     background: @flag-blue;
     margin: 20px 0;
-    .column{
+    .row{
         display: flex;
-        flex-direction: column;
+        
         div{
-            background: blue;
+            background: @accent-blue;
             margin: 40px;
-            border: 6px solid blue;
+            border: 6px solid @accent-blue;
             img{
                 width: 80px;
+            }
+            h3{
+                font-size: 1.5rem;
+            }
+            p{
+                font-weight: 200;
+            }
+            .fa{
+                color:@white;
+                text-decoration: none;
             }
         } 
     }

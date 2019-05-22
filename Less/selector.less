@@ -1,0 +1,31 @@
+.image-displayer{
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    .tab-bar{
+      display: flex;
+      flex-direction: column;
+      .tab{
+        font-size: 1.6rem;
+        background: @accent-blue;
+        border-bottom: @white solid 1px;
+        padding: 8px 4px;
+      }
+      .selected{
+          background: @flag-blue;
+      }
+    }
+    .viz{
+      padding: 10px;
+      background: @flag-blue;
+      display: none;
+      img{
+        width: 400px;
+        height: auto;
+        width:100%;
+      }
+    }
+    .displayed{
+      display: flex;
+    }  
+  }

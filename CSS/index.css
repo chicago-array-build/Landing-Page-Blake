@@ -138,23 +138,6 @@ body {
   align-items: center;
   font-family: 'Montserrat';
 }
-body nav {
-  height: 30px;
-  background-color: #ffffff;
-  width: 84%;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  margin: 40px;
-}
-body nav a {
-  text-decoration: none;
-  color: black;
-}
-body nav img {
-  height: 15px;
-  width: 15px;
-}
 body .main {
   background: #ef1b27;
   margin: 8%;
@@ -165,37 +148,6 @@ body .main h1 {
   font-size: 3rem;
   margin-bottom: 20px;
 }
-body .main .image-displayer {
-  margin: 20px 0;
-  display: flex;
-  justify-content: center;
-}
-body .main .image-displayer .tab-bar {
-  display: flex;
-  flex-direction: column;
-}
-body .main .image-displayer .tab-bar .tab {
-  font-size: 1.6rem;
-  background: blue;
-  border-bottom: #ffffff solid 1px;
-  padding: 8px 4px;
-}
-body .main .image-displayer .tab-bar .selected {
-  background: #a3d3ec;
-}
-body .main .image-displayer .viz {
-  padding: 10px;
-  background: #a3d3ec;
-  display: none;
-}
-body .main .image-displayer .viz img {
-  width: 400px;
-  height: auto;
-  width: 100%;
-}
-body .main .image-displayer .displayed {
-  display: flex;
-}
 /*
 nav {
   background: @white;
@@ -205,22 +157,32 @@ nav {
   margin-bottom: 40px;
 }
 */
-.row {
+.column {
   display: flex;
+  flex-direction: column;
   background: #a3d3ec;
   margin: 20px 0;
 }
-.row .column {
+.column .row {
   display: flex;
-  flex-direction: column;
 }
-.row .column div {
+.column .row div {
   background: blue;
   margin: 40px;
   border: 6px solid blue;
 }
-.row .column div img {
+.column .row div img {
   width: 80px;
+}
+.column .row div h3 {
+  font-size: 1.5rem;
+}
+.column .row div p {
+  font-weight: 200;
+}
+.column .row div .fa {
+  color: #ffffff;
+  text-decoration: none;
 }
 nav {
   height: 30px;
@@ -238,6 +200,37 @@ nav a {
 nav img {
   height: 15px;
   width: 15px;
+}
+.image-displayer {
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+}
+.image-displayer .tab-bar {
+  display: flex;
+  flex-direction: column;
+}
+.image-displayer .tab-bar .tab {
+  font-size: 1.6rem;
+  background: blue;
+  border-bottom: #ffffff solid 1px;
+  padding: 8px 4px;
+}
+.image-displayer .tab-bar .selected {
+  background: #a3d3ec;
+}
+.image-displayer .viz {
+  padding: 10px;
+  background: #a3d3ec;
+  display: none;
+}
+.image-displayer .viz img {
+  width: 400px;
+  height: auto;
+  width: 100%;
+}
+.image-displayer .displayed {
+  display: flex;
 }
 * {
   box-sizing: border-box;
