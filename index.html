@@ -7,16 +7,17 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Chicago Array</title>
 
-    <link rel="stylesheet"  href="CSS/index.css">.
+    <link rel="stylesheet"  href="CSS/index.css">
+    <script src="JS/pic-pick.js" async></script>
 </head>
 <body>
     <nav>
         <div class="star"><img src="imgs/star.png"></div>
-        <a href="#">Home</a>
+        <a href="index.html">Home</a>
         <div class="star"><img src="imgs/star.png"></div>
-        <a href="#">Our Team</a>
+        <a href="team.html">Our Team</a>
         <div class="star"><img src="imgs/star.png"></div>
-        <a href="#">Sign In</a>
+        <a target="_blank" href="https://chicago-array.netlify.com">Sign In</a>
         <div class="star"><img src="imgs/star.png"></div>
     </nav>
     <section class="main">
@@ -26,23 +27,23 @@
     </header>
        
     <section class='image-displayer'>
-        <ul class="selector">
-            <li class='select'>Air Quality</li>
-            <li class='select'>Pressure</li>
-            <li class='select'>Light</li>
-            <li class='select'>Temperature</li>
+        <ul class="tab-bar">
+            <h3 data-tab='1' class='tab selected'>Air Quality</h3>
+            <h3 data-tab='2' class='tab'>Pressure</h3>
+            <h3 data-tab='3' class='tab'>Light</h3>
+            <h3 data-tab='4' class='tab'>Temperature</h3>
         </ul>
         <div class='images'>
-            <div class='viz'>
+            <div class='viz displayed' data-tab='1'>
             <img src='imgs/placeholder-imgs/hmm.jpg'>
             </div>
-            <div class='viz'>
+            <div class='viz' data-tab='2'>
             <img src='imgs/placeholder-imgs/mlem.jpg'>
             </div>
-            <div class='viz'>
+            <div class='viz' data-tab='3'>
                 <img src='imgs/placeholder-imgs/wowz.jpg'>
             </div>
-            <div class=''>
+            <div class='viz' data-tab='4'>
                 <img src='imgs/chicago.jpg'>
             </div>  
         </div>

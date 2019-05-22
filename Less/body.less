@@ -18,7 +18,7 @@ body{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin-bottom: 40px;
+    margin: 40px;
     a{
       text-decoration: none;
       color: black;
@@ -41,24 +41,30 @@ body{
       margin: 20px 0;
       display: flex;
       justify-content: center;
-      .selector{
+      .tab-bar{
         display: flex;
         flex-direction: column;
-        .select{
+        .tab{
+          font-size: 1.6rem;
           background: @flag-blue;
           border-bottom: @white solid 1px;
           padding: 8px 4px;
         }
+        .selected{
+          background: blue;
+        }
       }
       img{
-        width: 300px;
+        width: 400px;
         padding: 10px;
-        background: @flag-blue;
+        background: blue;
         //display: none;
       }
-      .viz{
-        display: none;
+      .displayed{
+        background: green;
+        display: flex;
       }
+     
     }
   }
 }
