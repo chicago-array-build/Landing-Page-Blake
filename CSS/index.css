@@ -126,12 +126,79 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+@import "variables.less";
 body {
   background-image: url("../imgs/chicago.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Montserrat';
 }
-body img {
+body nav {
+  height: 20px;
+  background-color: #ffffff;
+  width: 84%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 40px;
+}
+body nav a {
+  text-decoration: none;
+  color: black;
+}
+body nav img {
+  height: 15px;
+  width: 15px;
+}
+body .main {
+  background: #ef1b27;
+  margin: 8%;
+  color: #ffffff;
+  padding: 20px;
+}
+body .main h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+body .main .image-displayer {
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+}
+body .main .image-displayer .selector {
+  display: flex;
+  flex-direction: column;
+}
+body .main .image-displayer .selector .select {
+  background: #a3d3ec;
+  border-bottom: #ffffff solid 1px;
+  padding: 8px 4px;
+}
+body .main .image-displayer img {
   width: 300px;
+  padding: 10px;
+  background: #a3d3ec;
+}
+body .main .image-displayer .viz {
+  display: none;
+}
+/*
+nav {
+  background: @white;
+  width: 90%;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 40px;
+}
+*/
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
 }

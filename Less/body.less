@@ -1,9 +1,77 @@
+
+@import"variables.less";
+
 body{
-    background-image: url("../imgs/chicago.jpg");
-    background-repeat: no-repeat;
+  background-image: url("../imgs/chicago.jpg");
+  background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
-img{
-    width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Montserrat';
+  nav{
+    height: 20px;
+    background-color:@white;
+    width: 84%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 40px;
+    a{
+      text-decoration: none;
+      color: black;
+    }
+    img{
+      height: 15px;
+      width: 15px;
+    }
+  }
+  .main{
+    background: @flag-red;
+    margin: 8%;
+    color: @white;
+    padding: 20px;
+    h1{ 
+      font-size: 3rem;
+      margin-bottom: 20px;
+    }
+    .image-displayer{
+      margin: 20px 0;
+      display: flex;
+      justify-content: center;
+      .selector{
+        display: flex;
+        flex-direction: column;
+        .select{
+          background: @flag-blue;
+          border-bottom: @white solid 1px;
+          padding: 8px 4px;
+        }
+      }
+      img{
+        width: 300px;
+        padding: 10px;
+        background: @flag-blue;
+        //display: none;
+      }
+      .viz{
+        display: none;
+      }
+    }
+  }
 }
+
+
+
+//david flack's code
+/*
+nav {
+  background: @white;
+  width: 90%;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 40px;
 }
+*/
