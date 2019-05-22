@@ -176,17 +176,20 @@ body .main .image-displayer .tab-bar {
 }
 body .main .image-displayer .tab-bar .tab {
   font-size: 1.6rem;
-  background: #a3d3ec;
+  background: blue;
   border-bottom: #ffffff solid 1px;
   padding: 8px 4px;
 }
 body .main .image-displayer .tab-bar .selected {
-  background: blue;
+  background: #a3d3ec;
 }
-body .main .image-displayer img {
+body .main .image-displayer div {
   width: 400px;
   padding: 10px;
-  background: blue;
+  background: #a3d3ec;
+}
+body .main .image-displayer div img {
+  width: 100%;
 }
 body .main .image-displayer .displayed {
   background: green;
@@ -203,13 +206,17 @@ nav {
 */
 .row {
   display: flex;
+  background: #a3d3ec;
+  margin: 20px 0;
 }
 .row .column {
   display: flex;
   flex-direction: column;
 }
 .row .column div {
+  background: blue;
   margin: 40px;
+  border: 6px solid blue;
 }
 .row .column div img {
   width: 80px;

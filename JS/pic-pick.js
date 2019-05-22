@@ -38,7 +38,7 @@ class Picture{
             //add to clicked, remove from rest
         //pics.forEach(pic => pic.classList.remove('displayed'));
         console.log('checkcheckooroo');
-        pics.forEach(pic => pic.style.display = 'none');
+        pics.forEach(pic => pic.style.background = 'purple');
         this.picElement.style.background = 'green';
     }
 }
