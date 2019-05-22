@@ -10,10 +10,11 @@ body{
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  font-family: 'Montserrat';
   nav{
     height: 20px;
     background-color:@white;
-    width: 90%;
+    width: 84%;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -29,14 +30,35 @@ body{
   }
   .main{
     background: @flag-red;
-    width: 90%;
+    margin: 8%;
     color: @white;
+    padding: 20px;
     h1{ 
-      font-size: 4rem;
+      font-size: 3rem;
+      margin-bottom: 20px;
     }
-    img{
-      width: 300px;
-      //display: none;
+    .image-displayer{
+      margin: 20px 0;
+      display: flex;
+      justify-content: center;
+      .selector{
+        display: flex;
+        flex-direction: column;
+        .select{
+          background: @flag-blue;
+          border-bottom: @white solid 1px;
+          padding: 8px 4px;
+        }
+      }
+      img{
+        width: 300px;
+        padding: 10px;
+        background: @flag-blue;
+        //display: none;
+      }
+      .viz{
+        display: none;
+      }
     }
   }
 }
