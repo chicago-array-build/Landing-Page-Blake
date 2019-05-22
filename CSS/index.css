@@ -145,7 +145,7 @@ body nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin-bottom: 40px;
+  margin: 40px;
 }
 body nav a {
   text-decoration: none;
@@ -170,22 +170,30 @@ body .main .image-displayer {
   display: flex;
   justify-content: center;
 }
-body .main .image-displayer .selector {
+body .main .image-displayer .tab-bar {
   display: flex;
   flex-direction: column;
 }
-body .main .image-displayer .selector .select {
-  background: #a3d3ec;
+body .main .image-displayer .tab-bar .tab {
+  font-size: 1.6rem;
+  background: blue;
   border-bottom: #ffffff solid 1px;
   padding: 8px 4px;
 }
-body .main .image-displayer img {
-  width: 300px;
+body .main .image-displayer .tab-bar .selected {
+  background: #a3d3ec;
+}
+body .main .image-displayer div {
+  width: 400px;
   padding: 10px;
   background: #a3d3ec;
 }
-body .main .image-displayer .viz {
-  display: none;
+body .main .image-displayer div img {
+  width: 100%;
+}
+body .main .image-displayer .displayed {
+  background: green;
+  display: flex;
 }
 /*
 nav {
@@ -196,6 +204,23 @@ nav {
   margin-bottom: 40px;
 }
 */
+.row {
+  display: flex;
+  background: #a3d3ec;
+  margin: 20px 0;
+}
+.row .column {
+  display: flex;
+  flex-direction: column;
+}
+.row .column div {
+  background: blue;
+  margin: 40px;
+  border: 6px solid blue;
+}
+.row .column div img {
+  width: 80px;
+}
 * {
   box-sizing: border-box;
 }
