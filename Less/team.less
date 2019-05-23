@@ -3,6 +3,7 @@
     flex-direction: column;
     background: @flag-blue;
     margin: 20px 0;
+    justify-content: space-around;
     @media @tablet{
         flex-direction: row;
     }
@@ -11,8 +12,10 @@
     }
     .row{
         display: flex;
+        justify-content: space-around;
         @media @tablet{
             flex-direction: column;
+            align-items: center;
         }
         div{
             background: @accent-blue;

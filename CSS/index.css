@@ -140,7 +140,7 @@ body {
 }
 body .main {
   background: #ef1b27;
-  margin: 8%;
+  width: 90%;
   color: #ffffff;
   padding: 20px;
 }
@@ -162,8 +162,9 @@ nav {
   flex-direction: column;
   background: #a3d3ec;
   margin: 20px 0;
+  justify-content: space-around;
 }
-@media (max-width: 1000px) {
+@media (max-width: 800px) {
   .column {
     flex-direction: row;
   }
@@ -175,10 +176,12 @@ nav {
 }
 .column .row {
   display: flex;
+  justify-content: space-around;
 }
-@media (max-width: 1000px) {
+@media (max-width: 800px) {
   .column .row {
     flex-direction: column;
+    align-items: center;
   }
 }
 .column .row div {
@@ -208,7 +211,7 @@ nav {
 nav {
   height: 30px;
   background-color: #ffffff;
-  width: 84%;
+  width: 90%;
   display: flex;
   justify-content: space-around;
   align-items: center;
