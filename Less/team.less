@@ -3,15 +3,29 @@
     flex-direction: column;
     background: @flag-blue;
     margin: 20px 0;
+    @media @tablet{
+        flex-direction: row;
+    }
+    @media @mobile{
+        flex-direction: column;
+    }
     .row{
         display: flex;
-        
+        @media @tablet{
+            flex-direction: column;
+        }
         div{
             background: @accent-blue;
-            margin: 40px;
+            margin: 20px;
             border: 6px solid @accent-blue;
+            width: 180px;
+            height: 180px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+          
             img{
-                width: 80px;
+                width: 100px;
             }
             h3{
                 font-size: 1.5rem;
@@ -22,6 +36,7 @@
             .fa{
                 color:@white;
                 text-decoration: none;
+                font-size: 2rem;
             }
         } 
     }
