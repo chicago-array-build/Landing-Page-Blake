@@ -5,34 +5,60 @@
     .tab-bar{
       display: flex;
       flex-direction: column;
+      @media @mobile{
+          width: 100%;
+        }
       .tab{
         font-size: 1.6rem;
         background: @accent-blue;
-        border-bottom: @white solid 1px;
+        border-bottom: @flag-blue solid 2px;
         padding: 8px 4px;
-      }
-      .phone-img{
-        display: none;
-        .thin
+        @media @tablet{
+          font-size: 1.4rem;
+        }
       }
       .selected{
           background: @flag-blue;
       }
-     
+      .phone-img{
+        display: none;
+        padding: 10px;
+        background: @flag-blue;
+        .thin{
+        width: 100%;
+        }
+      }
+      .drop{
+        @media @mobile{
+          display: block;
+        }
+      }
     }
     .viz{
       padding: 10px;
       background: @flag-blue;
       display: none;
-      max-width:700px;
+      max-width:800px;
+      @media @mobile{
+        display: none;
+      }
       .wide{
         width: 400px;
         //height: 400px;
         //height: auto;
         width:100%;
+        @media @mobile{
+          display: none;
+        }
       } 
+      p{
+        display: inline-block;
+      }
     }
     .displayed{
       display: block;
+      @media @mobile{
+        display: none;
+      }
     }  
   }

@@ -141,12 +141,22 @@ body {
 body .main {
   background: #ef1b27;
   width: 90%;
+  max-width: 1200px;
   color: #ffffff;
-  padding: 20px;
+  padding: 50px;
+  margin-bottom: 60px;
+}
+@media (max-width: 800px) {
+  body .main {
+    padding: 18px;
+  }
 }
 body .main h1 {
   font-size: 3rem;
   margin-bottom: 20px;
+}
+body .main p {
+  font-size: 1.2rem;
 }
 /*
 nav {
@@ -194,6 +204,11 @@ nav {
   flex-direction: column;
   justify-content: space-around;
 }
+@media (max-width: 800px) {
+  .column .row div {
+    margin: 16px;
+  }
+}
 .column .row div img {
   width: 100px;
 }
@@ -206,16 +221,18 @@ nav {
 .column .row div .fa {
   color: #ffffff;
   text-decoration: none;
-  font-size: 2rem;
+  font-size: 3rem;
 }
 nav {
-  height: 30px;
+  height: 32px;
   background-color: #ffffff;
   width: 90%;
+  max-width: 1200px;
   display: flex;
   justify-content: space-around;
   align-items: center;
   margin: 40px;
+  font-size: 1.3rem;
 }
 nav a {
   text-decoration: none;
@@ -224,6 +241,11 @@ nav a {
 nav img {
   height: 15px;
   width: 15px;
+}
+@media (max-width: 500px) {
+  nav .outer {
+    display: none;
+  }
 }
 .image-displayer {
   margin: 20px 0;
@@ -234,35 +256,68 @@ nav img {
   display: flex;
   flex-direction: column;
 }
+@media (max-width: 500px) {
+  .image-displayer .tab-bar {
+    width: 100%;
+  }
+}
 .image-displayer .tab-bar .tab {
   font-size: 1.6rem;
   background: #1e6eb6;
-  border-bottom: #ffffff solid 1px;
+  border-bottom: #a3d3ec solid 2px;
   padding: 8px 4px;
 }
-.image-displayer .tab-bar .phone-img {
-  display: none;
+@media (max-width: 800px) {
+  .image-displayer .tab-bar .tab {
+    font-size: 1.4rem;
+  }
 }
 .image-displayer .tab-bar .selected {
   background: #a3d3ec;
+}
+.image-displayer .tab-bar .phone-img {
+  display: none;
+  padding: 10px;
+  background: #a3d3ec;
+}
+.image-displayer .tab-bar .phone-img .thin {
+  width: 100%;
+}
+@media (max-width: 500px) {
+  .image-displayer .tab-bar .drop {
+    display: block;
+  }
 }
 .image-displayer .viz {
   padding: 10px;
   background: #a3d3ec;
   display: none;
-  max-width: 700px;
+  max-width: 800px;
 }
-@media (max-width: 800px) {
+@media (max-width: 500px) {
   .image-displayer .viz {
     display: none;
   }
 }
-.image-displayer .viz img {
+.image-displayer .viz .wide {
   width: 400px;
   width: 100%;
 }
+@media (max-width: 500px) {
+  .image-displayer .viz .wide {
+    display: none;
+  }
+}
+.image-displayer .viz p {
+  display: inline-block;
+}
 .image-displayer .displayed {
   display: block;
+}
+@media (max-width: 500px) {
+  .image-displayer .displayed {
+    display: none;
+  }
 }
 * {
   box-sizing: border-box;

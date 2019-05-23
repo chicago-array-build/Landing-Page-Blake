@@ -14,12 +14,19 @@ body{
   .main{
     background: @flag-red;
     width: 90%;
+    max-width: 1200px;
     color: @white;
-    padding: 20px;
-   
+    padding: 50px;
+    margin-bottom: 60px;
+   @media @tablet{
+     padding: 18px;
+   }
     h1{ 
       font-size: 3rem;
       margin-bottom: 20px;
+    }
+    p{
+      font-size: 1.2rem;
     }
 
   }

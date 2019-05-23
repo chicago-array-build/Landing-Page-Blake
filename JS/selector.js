@@ -9,7 +9,11 @@ class Tab{
     console.log(this.aData);
     this.picture = new Picture(this.aData);
 
-    console.log('test2');
+    this.anotherData = document.querySelector(`.phone-img[data-tab='${this.tabData}']`);
+    console.log(this.anotherData);
+    this.phone = new Phone(this.anotherData);
+
+    //console.log('test2');
     this.element.addEventListener('click', () => this.selectTab());
     }
 
@@ -24,6 +28,7 @@ class Tab{
     
         
         this.picture.selectPic();
+        this.phone.selectPhone();
     }
 }
 
@@ -40,6 +45,22 @@ class Picture{
         console.log('checkcheckooroo');
         pics.forEach(pic => pic.classList.remove('displayed'));
         this.picElement.classList.add('displayed');
+    }
+}
+
+class Phone{
+    constructor(phoneElement){
+        this.phoneElement = phoneElement;
+    }
+
+    selectPhone(){
+        const phonePics = document.querySelectorAll('.phone-img');
+        //set event listener to change styling if clicked
+            //add to clicked, remove from rest
+        //pics.forEach(pic => pic.classList.remove('displayed'));
+        console.log('checkles');
+        phonePics.forEach(pic => pic.classList.remove('drop'));
+        this.phoneElement.classList.toggle('drop');
     }
 }
 
