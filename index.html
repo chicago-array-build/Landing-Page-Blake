@@ -8,7 +8,7 @@
     <title>Chicago Array</title>
 
     <link rel="stylesheet"  href="CSS/index.css">
-    <script src="JS/pic-pick.js" async></script>
+    <script src="JS/selector.js" async></script>
 </head>
 <body>
     <nav>
@@ -29,22 +29,34 @@
     <section class='image-displayer'>
         <ul class="tab-bar">
             <h3 data-tab='1' class='tab selected'>Air Quality</h3>
+            <div class='phone-img' data-tab='1'>
+                    <img class="thin" src='imgs/placeholder-imgs/hmm.jpg'>
+                    </div>
             <h3 data-tab='2' class='tab'>Pressure</h3>
+            <div class='phone-img' data-tab='2'>
+                    <img class="thin" src='imgs/placeholder-imgs/mlem.jpg'>
+                    </div>
             <h3 data-tab='3' class='tab'>Light</h3>
+            <div class='phone-img' data-tab='3'>
+                    <img class="thin" src='imgs/placeholder-imgs/wowz.jpg'>
+                </div>
             <h3 data-tab='4' class='tab'>Temperature</h3>
+            <div class='phone-img' data-tab='4'>
+                    <img class="thin" src='imgs/chicago.jpg'>
+                </div>  
         </ul>
         <div class='images'>
             <div class='viz displayed' data-tab='1'>
-            <img src='imgs/placeholder-imgs/hmm.jpg'>
+            <img class="wide" src='imgs/placeholder-imgs/hmm.jpg'>
             </div>
             <div class='viz' data-tab='2'>
-            <img src='imgs/placeholder-imgs/mlem.jpg'>
+            <img class="wide" src='imgs/placeholder-imgs/mlem.jpg'>
             </div>
             <div class='viz' data-tab='3'>
-                <img src='imgs/placeholder-imgs/wowz.jpg'>
+                <img class="wide" src='imgs/placeholder-imgs/wowz.jpg'>
             </div>
             <div class='viz' data-tab='4'>
-                <img src='imgs/chicago.jpg'>
+                <img class="wide" src='imgs/chicago.jpg'>
             </div>  
         </div>
     </section>
