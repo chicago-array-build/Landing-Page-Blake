@@ -283,6 +283,9 @@ nav img {
 .image-displayer .tab-bar .phone-img .thin {
   width: 100%;
 }
+.image-displayer .tab-bar .phone-img p {
+  margin: 8px;
+}
 @media (max-width: 500px) {
   .image-displayer .tab-bar .drop {
     display: block;
@@ -309,7 +312,7 @@ nav img {
   }
 }
 .image-displayer .viz p {
-  display: inline-block;
+  margin: 8px;
 }
 .image-displayer .displayed {
   display: block;
