@@ -201,10 +201,10 @@ nav {
 }
 .column .row div {
   background: #1e6eb6;
-  margin: 20px;
+  margin: 12px;
   border: 6px solid #1e6eb6;
-  width: 180px;
-  height: 180px;
+  width: 200px;
+  height: 200px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -212,6 +212,8 @@ nav {
 @media (max-width: 800px) {
   .column .row div {
     margin: 16px;
+    width: 180px;
+    height: 180px;
   }
 }
 .column .row div img {
