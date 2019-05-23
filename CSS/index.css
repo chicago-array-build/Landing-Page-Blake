@@ -141,7 +141,7 @@ body {
 body .main {
   background: #ef1b27;
   width: 90%;
-  max-width: 1200px;
+  max-width: 1100px;
   color: #ffffff;
   padding: 50px;
   margin-bottom: 60px;
@@ -232,7 +232,7 @@ nav {
   height: 32px;
   background-color: #ffffff;
   width: 90%;
-  max-width: 1200px;
+  max-width: 1100px;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -300,7 +300,7 @@ nav img {
   padding: 10px;
   background: #a3d3ec;
   display: none;
-  max-width: 800px;
+  max-width: 700px;
 }
 @media (max-width: 500px) {
   .image-displayer .viz {
