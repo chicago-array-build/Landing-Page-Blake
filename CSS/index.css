@@ -240,6 +240,9 @@ nav img {
   border-bottom: #ffffff solid 1px;
   padding: 8px 4px;
 }
+.image-displayer .tab-bar .phone-img {
+  display: none;
+}
 .image-displayer .tab-bar .selected {
   background: #a3d3ec;
 }
@@ -247,14 +250,19 @@ nav img {
   padding: 10px;
   background: #a3d3ec;
   display: none;
+  max-width: 700px;
+}
+@media (max-width: 800px) {
+  .image-displayer .viz {
+    display: none;
+  }
 }
 .image-displayer .viz img {
   width: 400px;
-  height: auto;
   width: 100%;
 }
 .image-displayer .displayed {
-  display: flex;
+  display: block;
 }
 * {
   box-sizing: border-box;
