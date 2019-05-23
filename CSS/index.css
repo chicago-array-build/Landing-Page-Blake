@@ -153,10 +153,15 @@ body .main {
 }
 body .main h1 {
   font-size: 3rem;
+  font-weight: 700;
   margin-bottom: 20px;
 }
 body .main p {
   font-size: 1.2rem;
+}
+body .main footer {
+  text-align: center;
+  font-weight: 200;
 }
 /*
 nav {
