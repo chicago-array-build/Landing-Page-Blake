@@ -2,8 +2,9 @@
     display: flex;
     flex-direction: column;
     background: @flag-blue;
-    margin: 20px 0;
-    justify-content: space-around;
+    margin: 10px 0;
+    padding: 6px 0;
+    justify-content: space-evenly;
     @media @tablet{
         flex-direction: row;
     }
@@ -12,22 +13,22 @@
     }
     .row{
         display: flex;
-        justify-content: space-around;
+        justify-content: space-evenly;
         @media @tablet{
             flex-direction: column;
             align-items: center;
         }
         div{
             background: @accent-blue;
-            margin: 12px;
+            margin: 6px;
             border: 6px solid @accent-blue;
             width: 200px;
             height: 200px;
             display: flex;
             flex-direction: column;
-            justify-content: space-around;
+            justify-content: space-evenly;
             @media @tablet{
-                margin: 16px;
+                
                 width: 180px;
                 height: 180px;
             }
